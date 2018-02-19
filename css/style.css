@@ -1,0 +1,12 @@
+.jumbotron {
+    text-align: center;
+    background-color: white;
+}
+
+.jumbotron h1, .jumbotron p {
+    margin-bottom: 5%;
+}
+
+.jumbotron button {
+    font-size: 2em;
+}
