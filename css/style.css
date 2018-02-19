@@ -1,12 +1,39 @@
+/* Heading */
+
 .jumbotron {
     text-align: center;
     background-color: white;
+    margin-bottom: 0;
 }
 
 .jumbotron h1, .jumbotron p {
     margin-bottom: 5%;
 }
 
-.jumbotron button {
+#play {
     font-size: 2em;
+}
+
+
+/* Choosing numbers */
+
+.number-row {
+    height: 25%;
+    margin-bottom: 2vh;
+}
+
+.number-container {
+    background: none;
+}
+
+.number {
+    display: inline-block;
+    background: #ffff66;
+    text-align: center;
+    font-size: 3em;
+    width: 8%;
+    height: 100%;
+    margin-left: 0.9%;
+    margin-right: 0.5%;
+    border-radius: 50%;
 }
