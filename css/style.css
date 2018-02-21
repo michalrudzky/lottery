@@ -62,3 +62,9 @@
     font-size: 2em;
 }
 
+
+/* Results */
+
+#results div {
+    text-align: center;
+}
