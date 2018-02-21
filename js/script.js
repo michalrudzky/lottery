@@ -7,16 +7,19 @@ function isInArray(item, array) {
     return false;
 }
 
+
 $(document).ready(function() {
     var choice = [];
     var results = Array();
     
-    // Hide numbers on start
+    // Hide numbers and game button on start
     $('#choice-section').hide();
+    $('#game').hide();
     
     // Play button click
     $('#play').on('click', function() {
         $('#choice-section').show();
+        $('#game').show();
         $(this).hide();
     });
     
@@ -35,6 +38,17 @@ $(document).ready(function() {
         }
         
         // display choices
-        $('#error-msg').text(choice.sort());
+        $('#error-msg p').text(choice.sort() + "\t" + choice.length);
+    });
+    
+    // Game button click
+    $('#game').on('click', function() {
+        if (choice.length !== 5) {
+            $('#error-msg p').text('Please select 5 numbers.');
+        } else {
+            // Hide number section and game button
+            $('#choice-section').hide();
+            $(this).hide();
+        }
     });
 });
